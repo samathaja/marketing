@@ -43,16 +43,16 @@ steps:
               - columnReferences:
                   - columnCounter: 0bd1f6a2-5c20-4937-91c1-2409ed86f183
                     stepCounter: e3cfceca-a52f-4198-a01a-cf3738801c1e
-                transform: ""
+                transform: LOWER("CUSTOMER"."C_NAME")
           - columnReference:
               columnCounter: 44ffb1ae-152d-4491-a07c-84a195620a0e
               stepCounter: 9f4c3b54-fe4f-4208-a0a6-79b946e0b722
-            dataType: VARCHAR(40)
+            dataType: VARCHAR(100)
             description: ""
             hashColumns: []
             hashDetails: null
             name: C_ADDRESS
-            nullable: false
+            nullable: true
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 3c55e095-8928-4b92-a428-d3cb519ecd9a
@@ -112,20 +112,6 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 97b0fa38-eafb-434c-b324-f5b266ebf0fb
-                    stepCounter: e3cfceca-a52f-4198-a01a-cf3738801c1e
-                transform: ""
-          - columnReference:
-              columnCounter: b3bd8a38-eca4-4d98-9a00-b610159e5886
-              stepCounter: 9f4c3b54-fe4f-4208-a0a6-79b946e0b722
-            dataType: VARCHAR(117)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: C_COMMENT
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 20c60901-59f2-4eb9-8e7f-ef3a404f841b
                     stepCounter: e3cfceca-a52f-4198-a01a-cf3738801c1e
                 transform: ""
         cteString: ""
