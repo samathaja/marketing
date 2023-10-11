@@ -1,6 +1,13 @@
 defaultStorageMapping: MCAMAINBRANCH
 installedPackages: {}
-jobs: {}
+jobs:
+  Job-1:
+    excludeSelector: ""
+    id: 1
+    includeSelector: ""
+    name: SampleJob
+    steps: []
+    subgraphs: []
 locations:
   MCAMAINBRANCH:
     mappingDefinitions:
