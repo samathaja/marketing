@@ -1481,5 +1481,9 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-4:
+    id: "4"
+    name: subgraph_part
+    steps: []
 version: 2
