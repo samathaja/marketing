@@ -4,7 +4,7 @@ jobs:
   Job-1:
     excludeSelector: ""
     id: 1
-    includeSelector: ""
+    includeSelector: "{ location: SOURCE name: CUSTOMER } OR { location: MCAMAINBRANCH name: STG_CUSTOMER } OR { location: MCAMAINBRANCH name: DIM_CUSTOMER }"
     name: SampleJob
     steps: []
     subgraphs: []
@@ -1485,5 +1485,7 @@ subgraphs:
   Subgraph-4:
     id: "4"
     name: subgraph_part
-    steps: []
+    steps:
+      - 75af8bc6-fbe7-46a5-b809-a0b1b12311fe
+      - abbc4fe2-ff16-4bd5-9b51-b7333131fa4a
 version: 2
